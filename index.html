@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Store - Checkout</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #111827;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    form {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Store</h1>
+  </header>
+
+  <div class="container">
+    <h2>Product Name: Premium Access</h2>
+    <p>₹199 Only - Get instant access to our premium content!</p>
+
+    <!-- Razorpay Payment Button -->
+    <form>
+      <script src="https://cdn.razorpay.com/static/widget/payment-button.js"
+              data-payment_button_id="pl_LatgEd6cmU5N1L"
+              data-button_text="Pay ₹199 Now"
+              data-button_theme="brand-color">
+      </script>
+    </form>
+  </div>
+
+</body>
+</html>
